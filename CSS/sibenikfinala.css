@@ -1,0 +1,260 @@
+/* BODY */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+html, body{
+    margin: 0;
+    height: 100%;
+    zoom: 90%  ;
+}
+
+/* GRID */
+
+header {
+    grid-area: h; 
+    /* background-color: rgb(221, 255, 3); */
+}
+
+
+main {
+    grid-area: m; 
+    /* background-color: rgb(255, 3, 200); */
+}
+
+aside {
+    grid-area: a;
+    /* background-color: red; */
+}
+
+footer { 
+    grid-area: f;
+}
+
+.grid {
+    height: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(7, 1fr); */
+    grid-template-columns: 200px auto auto auto auto 500px auto ;
+    grid-template-rows: auto auto auto auto 100px;
+    grid-template-areas:
+    'h h h h h h h'
+    'm m m m m a a'
+    'm m m m m a a'
+    'm m m m m a a'
+    'f f f f f f f'
+    ;
+    /* background-color: rgb(24, 24, 24);
+    padding: 10px;
+    grid-gap: 10px;  */
+    
+}
+
+/* HEADER */
+
+.menu {
+  text-align: center;
+  color:  black;
+  margin-top: 20px;
+}
+
+nav ul li{
+  display:inline-block;
+  width:12%;
+  padding:10px 20px;
+  background-color: #000;  
+  border:3px solid black;
+  text-align:center;
+  color:white;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:inherit;
+  font-size:18px;
+
+} 
+
+
+
+nav ul li:hover{
+  background-color:#fff;
+  color:black;
+  box-shadow: 5px 5px;
+}
+
+
+#titulua {
+  text-align: center;
+  font-size: 50px;
+  color: #000000;
+}
+#titulua2 {
+    margin-top: -25px;
+    margin-left: 300px;
+    font-size: 50px;
+    color: #000000;
+}
+
+/* MAIN */
+
+#subtitulua {
+    margin-left: 300px;
+    font-size: 25px;
+    color: #3e533e;
+}
+
+#argazkia {
+    width: 70%;
+    margin-left: 300px;
+}
+
+#conttestua {
+    /* background-color: red; */
+    width: 74%;
+    margin-left: 300px;
+    
+}
+
+.testua {
+    font-size: 25px;
+}
+
+#berriak {
+    text-align: center;
+    /* background-color: red; */
+}
+
+#berriak2 {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 25px;
+}
+
+.asideimg {
+    border-radius: 50%; 
+    width: 45%;
+}
+
+#titulua3 {
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#titulua4{
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 35px;
+}
+/* FOOTER */
+
+/* FOOTER */
+
+
+
+footer{
+  
+    color:#fff;
+    font-family:Garamond  ;
+  }
+  
+  
+  #footertable {
+    margin: auto;
+    text-align: center;
+    /* background-color: green; */
+    width: 100%;
+  }
+  
+  .tabletext{
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration:none;
+    color: white;
+    /* background-color: #A12C33; */
+  
+  }
+  
+  .tabletext p {
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  .tabletext a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .tabletext p :hover{
+    color: #000;
+  }
+  
+  
+  #divfooter{
+    background-color: #2F6685;
+    margin-top: 30px;
+  }
+  
+  #thfooter{
+    /* background-color: #A12C33; */
+  width:5%;  
+  text-align: right;
+  padding-right: 25px;
+  } 
+  
+  #imgfooter{
+    /* background-color: #A12C33; */
+    /* float: right; */
+   
+    width: 100px;
+    /* padding-right: 50px; */
+   
+    /*background-color: pink;*/
+    text-align: right;
+  }
+  
+  #thlogo{
+    /* background-color: #A12C33; */
+    display:block;  
+    margin-right: 380px;
+    /* margin-left: 25px; */
+    margin-top: 7px;
+  } 
+  
+  #imglogo{
+  
+    width: 150px;
+    display:block;
+    margin:auto; 
+    
+  }
+  
+  .logoredes{
+    width: 95px;
+    margin-top: 6%;
+    /* text-align: center; */
+    margin-right: 15px;
+    padding-right: 40px;
+  
+  }
+  
+  .logoredes :hover{
+   width: 7%;
+  }
+  
+  #p-link{
+    color: #fff;
+    text-decoration: none;
+    
+  }

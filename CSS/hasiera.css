@@ -1,0 +1,349 @@
+/* BODY */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body{
+  margin: 0;
+  height: 100%;
+  zoom: 90%  ;
+  /* background-color: #000; */
+} 
+
+
+/* GRID */
+
+header {
+  grid-area: h; 
+  /* background-color: rgb(221, 255, 3); */
+  /* background-color: white; */
+  }
+
+nav {
+  grid-area: n; 
+  /* background-color: rgb(3, 242, 255); */
+  background-color: white;;
+}
+
+
+main {
+  grid-area: m; 
+  /* background-color: rgb(255, 3, 200); */
+  background-color: white;;
+}
+
+footer { 
+  grid-area: f;
+  
+}
+
+.grid {
+  height: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(7, 1fr); */
+  grid-template-columns: 200px auto ;
+  grid-template-rows: 130px 80px auto auto 100px;
+  grid-template-areas:
+  'h h h h h h h'
+  'n n n n n n n'
+  'm m m m m m m'
+  'm m m m m m m'
+  'f f f f f f f'
+  ;
+  /* background-color: rgb(24, 24, 24);
+  padding: 10px;
+  grid-gap: 10px;  */
+  
+}
+/* HEADER */
+
+#titulua {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  color: black;
+}
+
+
+
+
+/* MENU HORIZONTALA */
+
+.menu {
+  text-align: center;
+  color:  black;
+  margin-top: 20px;
+}
+
+nav ul li{
+  display:inline-block;
+  width:12%;
+  padding:10px 20px;
+  background-color: #000;  
+  border:3px solid black;
+  text-align:center;
+  color:white;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:inherit;
+  font-size:18px;
+
+} 
+
+
+
+nav ul li:hover{
+  background-color:#fff;
+  color:black;
+  box-shadow: 5px 5px;
+}
+
+
+/* MAIN */
+
+/* #divpilota {
+  text-align: center;
+}
+#tenispilota {
+  width: 60%;
+} */
+
+
+
+/* SLIDER - ARGAZKIEKIN */
+
+ 
+
+.slider{
+width: 100%;
+height: 600px;
+overflow: hidden;
+text-align: center;
+background-color: white;
+
+}
+.slider ul{
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+  width: 400%;
+  
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+ 
+}
+.slider img{
+  width: 50%;
+
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+  
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+  
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+  height: 100vh;
+}
+}
+
+#textuak {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;  
+  margin-top: 60px;
+  width: 50%;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+#taula {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.taulaargazkiak {
+  border-radius: 65%;
+  border-top-left-radius: 400% 400%;
+  border-top-right-radius: 400% 400%;
+  border-bottom-right-radius: 400% 400%;
+  border-bottom-left-radius: 400% 400%;
+  width: 500px;
+  margin: 30px;
+}
+
+.tituluak {
+  text-align: center;
+  font-weight: bold;
+  padding:5px 10px;
+  font-size:20px;
+}
+
+/* BERRIAK TESTUA */
+
+#notiziak{
+  font-size:42px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40%;
+  border-color: white;
+  color: black;
+  border-width: 7px;
+  border-style: solid;
+  border-left: auto;
+  border-right: auto;
+  width: 20%;
+}
+
+
+
+/* FECHASS PARTIDOS */
+
+#divpartidos {
+  margin-top:15px;
+  background-color: #CB5F47;
+  text-align: center;
+  border-radius: 15px;
+
+}
+
+#divpartidos div  {
+  display: inline-block;
+  text-align: center;
+  padding: 50px;
+  margin: 15px,;
+}
+
+.p-partidos {
+  font-size: 25px;
+  color: orange;
+  font-weight: bold;
+  border-right: 3px solid orange;
+  
+}
+
+.p2-partidos {
+  font-size: 20px;
+  font-style: times;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* FOOTER */
+
+
+footer{
+  color:#fff;
+  font-family:Garamond  ;
+}
+
+
+#footertable {
+  margin: auto;
+  text-align: center;
+  /* background-color: green; */
+  width: 100%;
+}
+
+.tabletext{
+  /* text-align: center; */
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration:none;
+  color: white;
+  /* background-color: #A12C33; */
+
+}
+
+.tabletext p {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.tabletext a{
+  color: white;
+  text-decoration: none;
+}
+
+.tabletext p :hover{
+  color: #000;
+}
+
+
+#divfooter{
+  background-color: #2F6685;
+
+}
+
+#thfooter{
+  /* background-color: #A12C33; */
+width:5%;  
+text-align: right;
+padding-right: 25px;
+} 
+
+#imgfooter{
+  /* background-color: #A12C33; */
+  /* float: right; */
+ 
+  width: 100px;
+  /* padding-right: 50px; */
+ 
+  /*background-color: pink;*/
+  text-align: right;
+}
+
+#thlogo{
+  /* background-color: #A12C33; */
+  display:block;  
+  margin-right: 380px;
+  /* margin-left: 25px; */
+  margin-top: 7px;
+} 
+
+/* #imglogo{
+
+  width: 150px;
+  display:block;
+  margin:auto; 
+  
+} */
+
+.logoredes{
+  width: 95px;
+  margin-top: 6%;
+  /* text-align: center; */
+  margin-right: 15px;
+  padding-right: 40px;
+
+}
+
+.logoredes :hover{
+ width: 7%;
+}
+
+#p-link{
+  color: #fff;
+  text-decoration: none;
+  
+}
